@@ -2,8 +2,12 @@
 ---
 
 - name: Ansible Playbook for configuring Pi-Hole on Raspberry Pi
-  hosts: webservers
+  hosts: all
+  gather_facts: true
+  become: yes
+  become_user: root
+  become_method: sudo
   roles:
     - pi
-  remote_user: pi
-  become: yes
+    #remote_user: pi
+ 
