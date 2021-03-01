@@ -72,7 +72,7 @@
     name="{{ fspath_pihole_config }}"
     state=directory
     owner=root
-    group="{{ group_pihole }}"
+    group=root
     mode=0755
   tags: pihole
 
