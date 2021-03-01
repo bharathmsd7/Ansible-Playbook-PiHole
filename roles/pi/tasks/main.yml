@@ -28,11 +28,16 @@
     - python-pip
     - vim
     - htop
-    - ntop
     - nmap
     - atop
   tags: admin
 
+- name: Install ntop
+  apt:
+    package: ntop
+    state: present
+  
+  
 - name: Install grin (better grep)
   shell: pip install grin
   tags: admin
