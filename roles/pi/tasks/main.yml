@@ -32,10 +32,10 @@
     - atop
   tags: admin
 
-- name: Install ntop
-  apt:
-    package: ntop
-    state: present
+#- name: Install ntop
+#  apt:
+#    package: ntop
+#    state: present
   
   
 - name: Install grin (better grep)
